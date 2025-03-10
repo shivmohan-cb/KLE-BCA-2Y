@@ -1,0 +1,97 @@
+/* to select all the elements of same tagname we use tagname of that element */
+header {
+    background-color: black;
+}
+/* tag name selector has more priority than class name selector */
+h1 {
+    color: green;
+}
+
+/* selected only anchor tags which are inside header tag */
+/* selected all <a> child elements of <header> */
+header a {
+    color: white
+}
+
+/* select class name with dot (.)  */
+.div1 {
+    background-color: orange;
+}
+.div h1 {
+    color: purple;
+}
+/* select id name with hashtag (#) */
+#div2 {
+    background-color: pink;
+}
+/* id selector has more priority than tagname selector */
+/* (element<space>element) element after space is used to select all the children elements of the the perticular elemnet */
+#div2 h1 {
+    color: white;
+}
+#div-id {
+    background-color: antiquewhite;
+}
+
+/* 
+selecting div elements of new-div id  which are direct child <div> of new-div id then selecting the direct <p> child of the direct child <div> of new-div 
+*/
+/* (>) is used to select direct child elements not all nested children */
+#new-div > div > p{
+color : blue
+}
+
+
+ /* li = [li,li,li,li,li,li]  */
+/* to select first element of li */
+ ul li:first-child {
+ background-color: red;
+}
+ /* to select last element of li */
+
+ul li:last-child {
+    background-color: pink;
+}
+
+ol li:nth-child(4){
+  background-color: orange;
+}
+ol li:nth-child(2) {
+  background-color: brown;
+}
+
+
+/* BOX Model */
+#box-1 {
+    display: inline-block;
+    width: 100px;
+
+    text-align: center;
+    background-color: lightgreen;
+
+    /* border: thickness type color */
+    border: 5px solid wheat;
+    /* padding: top right bottom left */
+    padding: 10px 10px 10px 10px;
+    /* margin: top right bottom left */
+    margin: 20px 20px 20px 20px;
+    
+    /* by default box-sizing is content-box */
+}
+
+#box-2 {
+    display: inline-block;
+    width: 100px;
+
+    text-align: center;
+    background-color: green;
+
+    /* border: thickness type color */
+    border: 5px solid black;
+    /* padding: top right bottom left */
+    padding: 10px 10px 10px 10px;
+    /* margin: top right bottom left */
+    margin: 20px 20px 20px 20px; 
+
+    box-sizing: border-box;
+}

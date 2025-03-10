@@ -1,0 +1,26 @@
+/* External CSS */
+/* External css has least priority, which means less priority than internal css and inline css */
+
+body {
+    background-color: aqua;
+}
+/* h2 external css will not work */
+h2 {
+    color: white;
+    background-color: orange;
+}
+/* p external css will not work */
+p {
+    color: white;
+    background-color: black;
+}
+
+h3 {
+    background-color: gold;
+    color: black;
+}
+
+span {
+  color: white;
+  background-color: green;
+}

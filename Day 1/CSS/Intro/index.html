@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - inline, internal , external</title>
+  <link rel="stylesheet" href="./external.css">
+</head>
+<!-- CSS - cascading stylesheet -->
+<!-- ineternal css -->
+<!-- Internal css has less priority than inline css : NO 2 Priority -->
+<!-- Internal css is limited to the same html page -->
+ <style>
+   h2 {
+       background-color: pink;
+       color: red;
+   }
+   
+   p {
+    background-color: red;
+    color:white;
+   }
+   form {
+    padding: 20px 20px;
+    border: 1px solid black;
+    background-color: green;
+   }
+ </style>
+<body>
+<h1>Type of CSS</h1>
+<!-- inline css -->
+<!-- inline css has priority NO 1 -->
+<!-- inline css limited to the perticular element -->
+ <h2 style="color:green; background-color: black;">Inline css</h2>
+<!-- end inline css -->
+
+ <!-- internal css -->
+<h2>Internal CSS</h2>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore id consectetur minus cupiditate, veritatis ad praesentium voluptatibus expedita eum optio, dolor, fugiat ut odit facere incidunt quos dolore quibusdam magni.</p>
+ <form action="">
+    <label>Name</label>
+    <input type="text">
+    <br>
+    <label>Father Name</label>
+    <input type="text">
+    <br>
+ </form>
+<!-- end internal css -->
+
+<!-- Extenal css -->
+<h2>External CSS</h2>
+<h3>THis is heading 3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident optio tempora ipsam quas repudiandae ullam non, adipisci, iste asperiores facilis doloribus, excepturi ducimus cupiditate maiores ipsa saepe quidem eius quia.</p>
+
+<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum magnam et cum.</span>
+<!-- enternl css end -->
+</body>
+
+</html>

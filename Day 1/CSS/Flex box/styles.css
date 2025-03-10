@@ -1,0 +1,26 @@
+/* Flex box */
+/* default div tag dislay: block */
+#flex-div {
+
+    border: 1px solid red;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    /* defult flex direction is row */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
+    align-items: center;
+    /* align-items: end; */
+    /* align-items: start; */
+    /* align-items: stretch; */
+    height: 300px;
+}
+
+#flex-div div {
+    /* display: inline-block; */
+    border: 1px solid black;
+}
