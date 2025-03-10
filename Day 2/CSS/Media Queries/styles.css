@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding:0 0;
+}
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+header nav a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+main {
+padding:1rem 1rem ;
+text-align: center;
+}
+
+
+footer {
+    background-color: gray;
+    color: wheat;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+#menu {
+    position: relative;
+    display: none;
+    /* display: flex; */
+    gap: 2px;
+    flex-direction: column;
+    width: 25px;
+}
+#menu .bar {
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: aliceblue;
+}
+
+/* Media queries are used to make website responsive */
+/* this media query is for exact mentioned screen size */
+/* @media screen and (width:375px) {
+     header nav {
+        display: none;
+     }
+     #menu {
+        display: flex;
+     }
+     img {
+        width: 100%;
+     }
+     h1 {
+      font-size: 2rem;
+     }
+     p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+     }
+} */
+
+/* this media will run when screen size will be below / less than 536px or 536px */
+@media screen and (max-width: 536px) {
+    header nav {
+        display: none;
+     }
+    #menu {
+        display: flex;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+/* this media queries will run when screen size will be more than 600px  */
+@media screen and (min-width: 600px) {
+  h1 {
+    background-color: gray;
+    color: white;
+  }
+  p {
+    color: red;
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
