@@ -107,7 +107,7 @@ digits.forEach((elm) => {
   let digit = elm;
   elm.addEventListener("click", () => {
     let digitValue = digit.getAttribute("data-btn");
-    Calc.takeInput(digitValue);
+    Calc.takeInput(digitValue == "." ? "0." : digitValue);
   });
 });
 
