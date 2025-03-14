@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    
+    <div id="calculator">
+        <div id="screen">
+            <div id="result"></div>
+            <hr>
+            <div id="input">0</div>
+        </div>
+        <div id="numbers">
+            <div class="row">
+                <div class="column operation" data-opr="AC">AC</div>
+                <div class="column operation" data-opr="DEL">⌫</div>
+                <div class="column operation" data-opr="%">%</div>
+                <div class="column operation" data-opr="/">&divide;</div>
+            </div>
+            <div class="row">
+                <div class="column digit" data-btn="7">7</div>
+                <div class="column digit" data-btn="8">8</div>
+                <div class="column digit" data-btn="9">9</div>
+                <div class="column operation" data-opr="*">&times;</div>
+            </div>
+            <div class="row">
+                <div class="column digit" data-btn="4">4</div>
+                <div class="column digit" data-btn="5">5</div>
+                <div class="column digit" data-btn="6">6</div>
+                <div class="column operation" data-opr="-">&minus;</div>
+            </div>
+            <div class="row">
+                <div class="column digit" data-btn="1">1</div>
+                <div class="column digit" data-btn="2">2</div>
+                <div class="column digit" data-btn="3">3</div>
+                <div class="column operation" data-opr="+">&plus;</div>
+            </div>
+            <div class="row">
+                <div class="column operation" data-opr="CE">CE</div>
+                <div class="column digit" data-btn="0">0</div>
+                <div class="column digit" data-btn=".">.</div>
+                <div class="column operation" data-opr="=">&equals;</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
