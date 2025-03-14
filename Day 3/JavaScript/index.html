@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <h1 id="second-h1">Scripting</h1>
+    <h2>Data types</h2>
+    <ul>
+        <li class="list-item">- string</li>
+        <li class="list-item">- boolean</li>
+        <li class="list-item">- number</li>
+        <li class="list-item">- object</li>
+        <li class="list-item">- arrays</li>
+        <li class="list-item">- undefined</li>
+        <li class="list-item">- null</li>
+        <li class="list-item">- symbols</li>
+    </ul>
+    <h2>Variable Declaration keywords</h2>
+    <h3>var</h3>
+    <p>Variable declared with <code>var</code> keyword are globally scoped .We use var key to declare global variables
+    </p>
+    <h3>let</h3>
+    <p>Variable declared with <code>let</code> keyword are locally scoped.let for local variables</p>
+    <h3>const</h3>
+    <p><code>const</code> is used to create contant variables</p>
+
+    <input type="email" name="myemail" value="email@gmail.com">
+    
+    <script src="./index.js"></script>
+
+    <script>
+        let name = "Kavita";
+        console.log(name);
+        name = 1234;
+        console.log(name);
+        const batch = "BCA-2y";
+        console.log(batch);
+        //    batch = "BCA-1y";
+        console.log("next line after error");
+
+        callName("Aishwariya");
+
+        function callName(name) {
+            console.log(name);
+        }
+        callName("Mallu");
+        callName("Malikaran");
+
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+
+        let i = 5;
+
+        while (i > 0) {
+            console.log(i)
+            i = i - 1;
+        }
+
+        // array - mixed data type
+        let arr = ["name", 3, true, false, "string"];
+
+        // iterate through array
+        for (let i = 0; i < 5; i++) {
+            console.log(arr[i]);
+        }
+
+        //print 4th index value of arr
+        console.log(arr[4]);
+
+        let str = "name" + "class";
+        // object - key value pair
+        let obj = {
+            name: "Kaveri",
+            age: 21,
+            batch: "BCA-2nd year",
+            //   adding funtion in object
+            run: function (km) {
+                console.log("run " + km + "km");
+            }
+        }
+        console.log(obj);
+
+        // print obj name;
+        console.log(obj.name);
+        obj.run(7);
+
+
+        //  DOM - Document object modeling
+        const heading1 = document.getElementsByTagName("h1");// array of elemets
+        // print value of text in h1
+        // heading1 = [h1,h1];
+        console.log(heading1[0].textContent);
+
+        //  select h3 tags and print text value of all h3
+        const heading3 = document.getElementsByTagName("h3");
+        for (let i = 0; i < heading3.length; i++) {
+            console.log(heading3[i].textContent);
+        }
+
+        const sec_h1 = document.getElementById("second-h1");// returns one element
+        console.log(sec_h1.textContent);
+
+        const list_items = document.getElementsByClassName("list-item");//arry of elemnts
+
+        console.log(list_items);
+        // element by name
+         const email = document.getElementsByName("myemail");// return array of element with name value
+         console.log(email[0].value);
+
+        //  query selector
+        const queryList = document.querySelector(".list-item");// first element of li array
+        console.log(queryList)
+        const queryList_items = document.querySelectorAll(".list-item");// return array of elements
+        console.log(queryList_items)
+        //  select any elemnet with id with the help of querySelector
+   const h1_2 = document.querySelector("#second-h1");
+   console.log(h1_2);
+    </script>
+
+</body>
+
+</html>
