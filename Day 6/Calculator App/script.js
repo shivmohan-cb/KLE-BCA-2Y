@@ -128,5 +128,4 @@ operators.forEach((elm) => {
   });
 });
 
-
 // add key press functionality - homework
