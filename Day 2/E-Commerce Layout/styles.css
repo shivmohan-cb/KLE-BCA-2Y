@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 0;
+}
+
+body {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+    z-index: 10;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#logo>span:first-child {
+    color: #2a55e5;
+    font-size: 1.35rem;
+}
+
+#logo>span:last-child {
+    font-size: 0.7rem;
+}
+
+#logo>span:last-child span:first-child {
+    color: gray;
+}
+
+#logo>span:last-child span:last-child {
+    color: #ffc200;
+}
+
+#option-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 4px;
+    width: 25px;
+    padding: 8px 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+#option-menu:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#option-menu .dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#nav-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#nav-buttons button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    background-color: white;
+}
+
+#nav-buttons button:first-child:hover {
+    background-color: #2a55e5;
+    color: white;
+}
+
+header form {
+    flex: auto;
+    background-color: #f0f5ff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+header form input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+header form input:focus {
+    outline: none;
+}
+
+main {
+    margin: 0.5rem;
+}
+
+main>div {
+    margin-bottom: 1rem;
+}
+
+#categories {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+#categories div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60px;
+    /* height: ; */
+}
+
+#categories div img {
+    width: 100%;
+}
+
+#categories div p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#carousal {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+#carousal img {
+    width: 100%;
+    animation: moveImage 12s ease-in-out 1s infinite;
+    transform: translateZ(0);
+}
+
+#carousal:hover img {
+    animation-play-state: paused;
+}
+
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+
+    4% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    24% {
+        transform: translateX(-200%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    44% {
+        transform: translateX(-300%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    64% {
+        transform: translateX(-400%);
+    }
+
+    80% {
+        transform: translateX(-400%);
+    }
+
+    84% {
+        transform: translateX(-500%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+section {
+    position: relative;
+    display: flex;
+
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.top-discount {
+    flex:auto;
+    background-color: white;
+    padding: 0 0.5rem;
+    overflow: hidden;
+}
+.top-discount h2 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: rgb(43, 43, 43);
+    font-weight: 700;
+}
+#cards {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.disc-card {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 170px;
+    align-items: center;
+    padding: 1rem;
+}
+
+.disc-card .img-div {
+    position: relative;
+    width: 70px;
+    height: 100px;
+}
+
+.disc-card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.disc-card div {
+    text-align: center;
+}
+
+.disc-card div p {
+    color: gray;
+    font-size: 0.6rem;
+}
+
+.disc-card div h3 {
+    font-size: 0.8rem;
+    color: rgb(67, 67, 67);
+}
+
+.ad {
+    position: relative;
+    background-color: white;
+    border-radius: 2px;
+    padding: 4px 4px;
+    width: 200px;
+}
+
+.ad img {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    background-color: black;
+    padding: 1rem 1rem;
+    color: white;
+}

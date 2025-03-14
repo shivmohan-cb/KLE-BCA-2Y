@@ -1,0 +1,97 @@
+* {
+    border: 1px solid black;
+    margin: 6px;
+}
+
+/* position */
+/* by default position of elements is static */
+#parent {
+    position: relative;
+    height: 300px;
+}
+
+#child {
+    /* position: absolute, finds its relative, and by default relative is viewport */
+    position: absolute;
+    /* top:0; */
+    left: 0;
+    /* right: 0; */
+    bottom: 0;
+    background-color: green;
+}
+
+
+
+#parent-2 {
+    /* position: relative; */
+    background-color: wheat;
+    height: 200vh;
+}
+
+.child {
+    position: relative;
+}
+
+.child h2 {
+    /* sticky toggles between relative and fixed */
+    position: sticky;
+    top: 0;
+}
+
+.child:nth-child(even) {
+    background-color: pink;
+}
+
+.child:nth-child(odd) {
+    background-color: gray;
+}
+
+.child:nth-child(even) h2 {
+    background-color: white;
+}
+
+.child:nth-child(odd) h2 {
+    background-color: green;
+}
+
+
+#fixed {
+    /* position: fixed is always relative of viewport */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#parent-3 {
+    position: relative;
+    height: 200px;
+}
+
+#parent-3 div {
+    position: absolute;
+    width: 100px;
+}
+
+#div-1 {
+    /* by default all the elements have z-index value 0 */
+    background-color: orange;
+    top: 0;
+    /* default z-index: 0 */
+    z-index: 3;
+}
+
+#div-2 {
+    background-color: white;
+    top: 12.5px;
+    left: 25px;
+    /* default z-index: 0 */
+    z-index: 2;
+}
+
+#div-3 {
+    background-color: green;
+    top: 25px;
+    left: 50px;
+    /* default z-index: 0 */
+    z-index: 1;
+}
