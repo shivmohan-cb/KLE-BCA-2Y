@@ -9,5 +9,4 @@ function Input({ label }){
         </div>
     )
 }
-
 export default Input;
