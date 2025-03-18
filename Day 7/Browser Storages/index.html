@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Storages</title>
+</head>
+
+<body>
+
+    <h1>Browser Storages</h1>
+
+    <h2>Local Storage</h2>
+    <ul>
+        <li>Data stored in localStorage remain persistant, until and unless we/user delete that data.</li>
+        <li>Each domain has its own localStorage</li>
+        <li>
+            Generally localStorage storage capacity is limited to 5mb, but it may vary browser to browser.
+        </li>
+    </ul>
+
+    <h2>Session Storage</h2>
+    <ul>
+        <li>Data stored in Session Storage is cleared when window/tab is closed or browser is closed</li>
+        <li>Each domain has its own session Storage</li>
+        <li>
+            Generally Session storage capacity is limited to 5mb, but it may vary browser to browser.
+        </li>
+    </ul>
+    <h2>Cookie Storage</h2>
+    <ul>
+    <li>Data for cookie storage has expiry. if there is no expiry data can be stored for longer period of time</li>
+    <li>Each domain has its own cookie storage</li>
+    <li>
+        Cookie storage has capacity of storing data of 4kb only, becase cookie is sent everytime when a request is sent
+        from client/browser to server, to reduce the request header load 4kb space for cookie is standarized for all
+        browsers.
+    </li>
+</ul>
+<!-- ---------------------------------------------- -->
+<hr>
+<hr>
+<h2>Form for Saving data in localStorage</h2>
+<form action="" id="form1">
+    <label for="name">Name</label><br>
+    <input id="name" type="text" name="name" required><br>
+    <label for="email">Email</label><br>
+    <input id="email" type="email" name="email" required><br>
+    <label for="pass">Password</label><br>
+    <input id="pass" type="password" name="pass" required><br>
+    <button>Save Form Data</button>
+</form>
+<br><br><br><br><br>
+
+<!-- ---------------------------------------------- -->
+<hr>
+<hr>
+<h2>Form for Saving data in Session Storage</h2>
+<form action="" id="form2">
+    <label for="title">Title</label><br>
+    <input id="title" type="text" name="title" required><br>
+    <label for="author">Author</label><br>
+    <input id="author" type="text" name="author" required><br>
+    <label for="pages">Total Pages</label><br>
+    <input id="pages" type="number" name="pages" required><br>
+    <button>Save Form Data in Session storage</button>
+</form>
+<br><br><br><br><br><br><br><br><br>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
